@@ -4,7 +4,7 @@ seen = requests.session()
 res = seen.get("http://121.43.169.97/common/public/verifycode1/0.088340864368183")
 # print(res.content)
 # print(res.status_code)
-with   open("code.png","wb")as f:
+with   open("../hetong/code.png", "wb")as f:
     f.write(res.content)
 
 res2= seen.post(url ='http://121.43.169.97/member/public/sendSms',
