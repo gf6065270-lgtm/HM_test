@@ -4,8 +4,8 @@
 #接口测试基础学完
 #接口测试基础学完
 import requests
-from HM_jiekou_base.hetong.scripts.config import BASE_URL
-from HM_jiekou_base.hetong.scripts.tools import common_assert
+from HM_jiekou_base_02.hetong.scripts.config import BASE_URL
+from HM_jiekou_base_02.hetong.scripts.tools import common_assert
 
 
 class Test_add_coutrce():

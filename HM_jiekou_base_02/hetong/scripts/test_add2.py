@@ -3,11 +3,13 @@
 #接口测试基础学完
 #接口测试基础学完
 #接口测试基础学完
+import os
 import random
 
 import requests
-from HM_jiekou_base.hetong.scripts.config import BASE_URL
-from HM_jiekou_base.hetong.scripts.tools import common_assert
+from HM_jiekou_base_02.hetong.scripts.config import BASE_URL
+from HM_jiekou_base_02.hetong.scripts.os_ import file_name1
+from HM_jiekou_base_02.hetong.scripts.tools import common_assert
 
 
 class Test_add_coutrce():
@@ -58,7 +60,7 @@ class Test_add_coutrce():
     def test_add_coutrce_upload(self, login):
         res =requests.post(BASE_URL+'/api/common/upload',
                            headers={'Authorization': login},
-                           files={'file': open('./HM_jiekou_base/hetong/scripts/客达天下API文档.pdf', 'rb')}
+                           files={'file': open('./HM_jiekou_base_02/hetong/scripts/客达天下API文档.pdf', 'rb')}
 
         )
         print(res.json())
@@ -75,7 +77,7 @@ class Test_add_coutrce():
                                 "courseId":588861 ,  # 课程ID
                                 "channel": "0",  # 渠道标识
                                 "activityId": 77,  # 活动ID
-                                "fileName": "客达天下API文档.pdf"  # 关联的文件名称
+                                "fileName": file_name1  # 关联的文件名称
                             }
 
                             )

@@ -1,7 +1,7 @@
 import pytest
 import requests
 
-from HM_jiekou_base.hetong.scripts.config import BASE_URL
+from HM_jiekou_base_02.hetong.scripts.config import BASE_URL
 
 
 @pytest.fixture(scope="class")
